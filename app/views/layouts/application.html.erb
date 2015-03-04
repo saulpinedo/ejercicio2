@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <%=link_to "Ejercicio 2",root_path,:class=>'navbar-brand' %></li>
+    </div>
+    <nav>
+      <ul class="nav navbar-nav text-center">
+        <li><%=link_to "country" %></li>
+        <li><%=link_to "Inicio",root_path %></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+
+<%= yield %>
+
+</body>
+</html>
